@@ -1,0 +1,138 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+
+.logo-img {
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 50%;
+    
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul a {
+    margin-left: 20px;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+footer {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul a {
+    margin-left: 10px;
+}
+
+footer ul a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Media Queries */
+/* Móviles */
+@media (max-width: 600px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    main, footer {
+        padding: 10px;
+    }
+}
+
+/* Tabletas */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main, footer {
+        padding: 15px;
+    }
+}
+
+/* Escritorio */
+@media (min-width: 1025px) {
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main, footer {
+        padding: 20px;
+    }
+}
