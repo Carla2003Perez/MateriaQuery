@@ -21,31 +21,28 @@
     
 </head>
 <body>
-
+    
     <header>
         <div class="logo">
             
-            <img src="img/UMG.jpg" class="logo-img"/>
+            <img src="img/UMG.jpg" class="logo-img" alt="logo"/>
             UMG
         </div>
-        <!--nav class="d-none d-md-block">
-            <ul class="nav-links">
-                <li class="nav-item"><a class="nav-link text-white" href="#">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Servicios</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Contacto</a></li>
-            </ul-->
-            <nav id="nav" class="responsive">
-                <ul class="nav-links">
-                    <a href="#Inicio">Inicio</a>
-                    <a href="#Servicios">Servicios</a>
-                    <a href="#Contacto">Contacto</a>
+        <button class="abrir-menu">abrir</button>
+            <nav class="nav" id="nav">
+                <button class="cerrar-menu" id="cerrar">Cerrar</button>
+                <ul class="nav-list">
+                <li><a href="#Inicio">Inicio</a></li>
+                <li><a href="#Servicios">Servicios</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
                 
                 </ul>
-                <div class="menu" onclick="responsiveMenu()">☰</div>
+                
             </nav>
         
         
     </header>
+    <script src="java.js"></script>
 
     <main>
         <h1>Bienvenido a Nuestra Página</h1>
@@ -70,7 +67,7 @@
     <footer>
         &copy; Carla Perez
     </footer>
-    <script src="java.js"></script>
+   
     <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
