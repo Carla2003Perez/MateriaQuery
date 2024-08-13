@@ -5,56 +5,52 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-
 }
 
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding: 1rem;
-    background-color: #333;
-    color: white;
+    background: linear-gradient(to right, #000c67, #007be5);
+
 }
 
 .logo {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-
-
-.logo-img {
-    height: 60px;
-    margin-right: 10px;
+    
+    height: 70px;
     border-radius: 50%;
     
 }
 
+.titulo{
+    font-size: 25px;
+    align-items: left;
+    color:#ddd;
+   
+}
+
 .nav-list {
     list-style-type: none;
-    gap: 1rem;
+  
     display: flex;
+    gap: 4rem;
 }
-/*nav ul li {
-    margin-left: 20px;
-}*/
 
 .nav-list li a {
-    color: white;
     text-decoration: none;
+    color: #fff9f9;
 }
 
 .abrir-menu,
-.cerrar-menu{
-    display:none;
+.cerrar-menu {
+    display: none;
 }
-
 
 .menu {
     display: none;
     cursor: pointer;
-    font-size: 1.5em;
+    font-size: 1rem;
 }
 
 main {
@@ -67,61 +63,86 @@ main {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
+    background: linear-gradient(to right, #089fd2, #1f6d87);
 }
 
 .card {
     border: 1px solid #ddd;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 9px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
+    position: relative; /* Añadido para asegurar que las tarjetas se mantengan en su lugar */
+    z-index: 1; /* Mantén este valor bajo */
 }
 
-footer{
+footer {
     background-color: #000;
     color: #fff;
-    padding: 1em 0;
-    
+    padding: 5em 0;
     text-align: center;
     margin-top: auto;
 }
 
+
+.inicio header nav a {
+    display: inline-block;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+}
 /* Media Queries */
 /* Móviles */
 @media (max-width: 600px) {
-    
-    .abrir-menu,.cerrar-menu{
-        display:block;
+
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
         border: 0;
         font-size: 1.25rem;
         background-color: transparent;
+        cursor: pointer;
     }
 
+    .abrir-menu {
+        color: #1c1c1c;
+    }
 
-    
-    .nav{
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
         opacity: 0;
         visibility: hidden;
         display: flex;
         flex-direction: column;
         align-items: end;
+        gap: 1rem;
         position: absolute;
         top: 0;
+        right: 0;
         bottom: 0;
         background-color: #1c1c1c;
         padding: 2rem;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        z-index: 1000; /* Añadido para asegurar que esté por encima de las tarjetas */
     }
 
-    .nav.visible{
+    .nav.visible {
         opacity: 1;
         visibility: visible;
     }
 
     .nav-list {
         flex-direction: column;
+        align-items: end;
     }
-    
+
+    .nav-list li a {
+        color: #ecececec;
+    }
+
     .menu {
         display: block;
     }
@@ -148,6 +169,8 @@ footer{
 
 /* Escritorio */
 @media (min-width: 1025px) {
+
+    
     .card-container {
         grid-template-columns: repeat(3, 1fr);
     }
