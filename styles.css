@@ -105,7 +105,7 @@ footer {
     }
 
     .abrir-menu {
-        color: #1c1c1c;
+        color: #f7f3f3;
     }
 
     .cerrar-menu {
@@ -152,7 +152,7 @@ footer {
     }
 
     main, footer {
-        padding: 10px;
+        padding: 9px;
     }
 }
 
