@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 body {
     font-family: sans-serif;
     margin: 0;
@@ -53,9 +53,19 @@ header {
     font-size: 1rem;
 }
 
-main {
-    padding: 20px;
+/*INICIO*/
+.ti {
+    font-family: 'Britannic Bold';
     text-align: center;
+    
+}
+
+.parrafo{
+    
+    font-family: 'Bookman Old Style';
+    text-align: justify;
+    margin-inline: 10%;
+   
 }
 
 .card-container {
@@ -75,11 +85,20 @@ main {
     position: relative; 
     z-index: 1; 
 }
+.btn{
+    background-color: crimson;
+}
+.btn a{
+    
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
 
 footer {
     background-color: #000;
     color: #fff;
-    padding: 5em 0;
+    padding: 2em 0;
     text-align: center;
     margin-top: auto;
 }
@@ -92,7 +111,7 @@ footer {
     border: 2px solid transparent;
 }
 
-/*imagenes de lo articulos*/
+
 
 
 .ino {
@@ -117,8 +136,7 @@ footer {
 
 .comentarios{
     background:
-        linear-gradient(rgba(0,12,103,1), rgba(0,12,103,.8)),
-        url(img/foto-contacto.png);
+        linear-gradient(rgba(0,12,103,1), rgba(0,12,103,.8));
         background-size: cover;
         color: #fff;
         margin-top: 100px;
@@ -184,7 +202,7 @@ footer {
         background-color: #1c1c1c;
         padding: 2rem;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-        z-index: 1000; /* Añadido para asegurar que esté por encima de las tarjetas */
+        z-index: 1000; 
     }
 
     .nav.visible {
