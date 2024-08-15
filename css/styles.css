@@ -65,6 +65,7 @@ header {
     font-family: 'Bookman Old Style';
     text-align: justify;
     margin-inline: 10%;
+    font-size: 20px;
    
 }
 
@@ -95,13 +96,7 @@ header {
     transition: background-color 0.3s ease;
 }
 
-footer {
-    background-color: #000;
-    color: #fff;
-    padding: 2em 0;
-    text-align: center;
-    margin-top: auto;
-}
+
 
 
 .inicio header nav a {
@@ -119,22 +114,12 @@ footer {
     height: 267px;
     border-radius: 10%;
     margin: auto;
-    margin-bottom: 20px;  
+   
    
 }
-/*Comentarios*/
+/*Opinion*/
 
-.card1 {
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 9px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    position: relative; 
-    z-index: 1; 
-}
-
-.comentarios{
+.opinion{
     background:
         linear-gradient(rgba(0,12,103,1), rgba(0,12,103,.8));
         background-size: cover;
@@ -142,21 +127,33 @@ footer {
         margin-top: 100px;
         padding: 80px 20px;
 }
+/*Comentarios*/
+
+
+
+.comentarios{
+    background:
+        linear-gradient(rgba(0,12,103,1), rgba(0,12,103,.8));
+        background-size: cover;
+        color: #fff;
+        margin-top: 100px;
+        padding: 70px 10px;
+}
 
 .comentarios .col{
-    max-width: 1100px;
+    max-width: 1000px;
     margin: auto;
+    
 }
 
 .comentarios input, .comentarios textarea{
-    width: 100%;
+    width: 50%;
     border: none;
-    
-    padding: 10px;
+    padding: 7px;
     border: 1px solid #8d8d8d ;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     outline: none;
-    color: #ff5b00;
+    
 }
 .comentarios .btn{
     background-color: none;
@@ -165,6 +162,14 @@ footer {
     color: #fff;
     cursor: pointer;
     background: linear-gradient(to right, #ff5b00, #ff9900);
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2em 0;
+    text-align: center;
+    margin-top: auto;
 }
 
 /* Media Queries */
