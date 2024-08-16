@@ -1,6 +1,5 @@
 
 body {
-    font-family: sans-serif;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -57,8 +56,9 @@ header {
 
 /*INICIO*/
 .ti {
-    font-family: 'Britannic Bold';
+    font-family: 'Arial Black';
     text-align: center;
+    font-size: 30px;
     
 }
 
@@ -67,22 +67,21 @@ header {
     font-family: 'Bookman Old Style';
     text-align: justify;
     margin-inline: 10%;
-    font-size: 20px;
+    font-size: 15px;
    
 }
 
 .card-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    
+    display: grid;  
     gap: 20px;
-    padding: 20px;
+    padding: 30px;
     background: linear-gradient(to right, #089fd2, #1f6d87);
 }
 
 .card {
     border: 1px solid #ddd;
-    gap: 20px;
-    padding: 20px;
+  
     border-radius: 9px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: left;
@@ -121,23 +120,12 @@ header {
    
    
 }
-/*Opinion*/
-
-.opinion{
-    background:
-        linear-gradient(rgba(0,12,103,1), rgba(0,12,103,.8));
-        background-size: cover;
-        color: #fff;
-        margin-top: 100px;
-        padding: 80px 20px;
-}
-/*Comentarios*/
 
 
 
 .comentarios{
     background:
-        linear-gradient(rgba(0,12,103,1), rgba(0,12,103,.8));
+        linear-gradient(rgb(74, 84, 158), rgba(0,12,103,.8));
         background-size: cover;
         color: #fff;
         margin-top: 100px;
@@ -167,9 +155,6 @@ header {
     cursor: pointer;
     background: linear-gradient(to right, #ff5b00, #ff9900);
 }
-
-
-
 
 
 footer {
@@ -240,6 +225,7 @@ footer {
         grid-template-columns: 1fr;
     }
 
+   
     main, footer {
         padding: 9px;
     }
@@ -257,7 +243,7 @@ footer {
 }
 
 /* Escritorio */
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
 
     
     .card-container {
@@ -267,4 +253,6 @@ footer {
     main, footer {
         padding: 20px;
     }
+
+    
 }

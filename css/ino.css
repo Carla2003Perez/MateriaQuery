@@ -59,22 +59,32 @@ header {
     color: #1f0101;
     font-size: 30px;
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Arial Black';
+   
  }
 
-
+ h4{
+    color:rgb(183, 130, 130);
+    font-family: sans-serif;
+ }
 .card {
     border: 1px solid #ddd;
-  
+ 
     padding: 20px;
     border-radius: 9px;
-    box-shadow: 0 2px 5px rgba(205, 28, 28, 0.844);
     text-align: left;
     position: relative; 
-   
     background: linear-gradient(to right, #4e0606, #e50000);
     color:aliceblue;
     
+    
+}
+
+.card2 {
+    display: grid;  
+    gap: 20px;
+    padding: 100px;
+    background: white;
 }
 
 
@@ -108,14 +118,7 @@ header {
     margin-right: 40px; 
 }
 
-.card2 {
-    
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 20px;
-    min-width:1100px ; 
-    min-height: 100px; 
-}
+
 
 .izquierda{
     
@@ -140,10 +143,59 @@ footer {
 /* Media Queries */
 /* Para pantallas de hasta 600px */
 @media (max-width: 600px) {
-    body {
-        background-image: url("../img/innocent-fondo-small.webp");
-       
+
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
     }
+
+    .abrir-menu {
+        color: #f7f3f3;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        z-index: 1000; 
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #ecececec;
+    }
+
+    .menu {
+        display: block;
+    }
+    
     .logo {
         height: 50px;
     }
@@ -159,7 +211,7 @@ footer {
     }
 
     .card2 {
-        min-width: 100%;
+        
         padding: 20px;
     }
 
@@ -176,51 +228,35 @@ footer {
 
 /* Para pantallas entre 601px y 1024px */
 @media (min-width: 601px) and (max-width: 1024px) {
-    body {
-        background-image: url("../img/innocent-fondo-medium.webp");
-    }
+    
 
-    .logo {
-        height: 60px;
-    }
-
-    .nav-list {
-        gap: 2rem;
+    .tab .fila {
+        flex-direction: column;
+        margin-bottom: 20px;
     }
 
     .card {
         padding: 15px;
         box-shadow: 0 2px 4px rgba(205, 28, 28, 0.844);
+        
     }
 
     .card2 {
+       
         min-width: 90%;
         padding: 25px;
     }
 
-    .tab .fila {
-        margin-bottom: 60px;
-    }
-
+    
     .tab .fila .col {
         margin-right: 20px;
     }
 }
 
-/* Para pantallas de 1025px en adelante */
-@media (min-width: 1024px) {
-    body {
-        background-image: url("../img/innocent-fondo.webp");
-    }
 
-    .logo {
-        height: 70px;
-    }
-
-    .nav-list {
-        gap: 4rem;
-    }
-
+@media (min-width: 1025px) {
+   
+  
     .card {
         padding: 20px;
         box-shadow: 0 2px 5px rgba(205, 28, 28, 0.844);
@@ -229,9 +265,11 @@ footer {
     .card2 {
         min-width: 1100px;
         padding: 30px;
+      
     }
 
-    .tab .fila .col {
-        margin-right: 40px;
+    footer {
+        padding: 20px;
     }
+   
 }
