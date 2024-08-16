@@ -5,12 +5,15 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url("../img/Ingeniero.webp");
-  
+   
+    background-image: url("../img/dfx.jpg");
+   
     
 }
 
 
+
+ 
 .logo {
     
     height: 70px;
@@ -48,7 +51,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    background: linear-gradient(to right, #104a28, #10912c);
+    background: purple;
 
 }
 
@@ -56,29 +59,25 @@ header {
     color: #1f0101;
     font-size: 30px;
     text-align: center;
-    font-family: 'Arial Black';
-   
- }
-
- h4{
-    color:black;
     font-family: sans-serif;
  }
 
 
 .card {
     border: 1px solid #ddd;
-    gap: 20px;
+  
     padding: 20px;
     border-radius: 9px;
-    box-shadow: 0 2px 5px rgba(205, 28, 28, 0.844);
+    
     text-align: left;
     position: relative; 
-    z-index: 1; 
-    background: linear-gradient(to right, #dc9403, #753f0d);
+   
+    background: linear-gradient(to right, #e8850c, #dbce12db);
     color:aliceblue;
     
 }
+
+
 .ino {
     width: 189px;
     height: 267px;
@@ -130,18 +129,21 @@ header {
 
 
 footer {
-    background-color: #0f3604;
+    background-color: #000;
     color: #fff;
     padding: 2em 0;
     text-align: center;
     margin-top: auto;
 }
 
+
+/* Media Queries */
+/* Para pantallas de hasta 600px */
 @media (max-width: 600px) {
     body {
-        background-image: url("../img/innocent-fondo-small.webp");
+        background-image: url("../img/dfx.jpg");
+       
     }
-
     .logo {
         height: 50px;
     }
@@ -174,7 +176,9 @@ footer {
 
 /* Para pantallas entre 601px y 1024px */
 @media (min-width: 601px) and (max-width: 1024px) {
-    
+    body {
+        background-image: url("../img/dfx.jpg");
+    }
 
     .logo {
         height: 60px;
@@ -205,7 +209,9 @@ footer {
 
 /* Para pantallas de 1025px en adelante */
 @media (min-width: 1024px) {
-   
+    body {
+        background-image: url("../img/dfx.jpg");
+    }
 
     .logo {
         height: 70px;

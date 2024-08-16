@@ -65,17 +65,19 @@ header {
 
 .card {
     border: 1px solid #ddd;
-    gap: 20px;
+  
     padding: 20px;
     border-radius: 9px;
     box-shadow: 0 2px 5px rgba(205, 28, 28, 0.844);
     text-align: left;
     position: relative; 
-    z-index: 1; 
+   
     background: linear-gradient(to right, #4e0606, #e50000);
     color:aliceblue;
     
 }
+
+
 .ino {
     width: 189px;
     height: 267px;
@@ -107,7 +109,7 @@ header {
 }
 
 .card2 {
-    border: 1px solid #8d8d8d;
+    
     background-color: #fff;
     padding: 30px;
     border-radius: 20px;
@@ -136,90 +138,100 @@ footer {
 
 
 /* Media Queries */
-/* Móviles */
+/* Para pantallas de hasta 600px */
 @media (max-width: 600px) {
-
-    .abrir-menu,
-    .cerrar-menu {
-        display: block;
-        border: 0;
-        font-size: 1.25rem;
-        background-color: transparent;
-        cursor: pointer;
+    body {
+        background-image: url("../img/innocent-fondo-small.webp");
+       
     }
-
-    .abrir-menu {
-        color: #f7f3f3;
-    }
-
-    .cerrar-menu {
-        color: #ececec;
-    }
-
-    .nav {
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #1c1c1c;
-        padding: 2rem;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-        z-index: 1000; 
-    }
-
-    .nav.visible {
-        opacity: 1;
-        visibility: visible;
+    .logo {
+        height: 50px;
     }
 
     .nav-list {
         flex-direction: column;
-        align-items: end;
-    }
-
-    .nav-list li a {
-        color: #ecececec;
-    }
-
-    .menu {
-        display: block;
+        gap: 1rem;
     }
 
     .card {
-        grid-template-columns: 1fr;
+        padding: 10px;
+        box-shadow: 0 1px 3px rgba(205, 28, 28, 0.844);
     }
 
-    footer {
-        padding: 9px;
-    }
-}
-
-/* Tabletas */
-@media (min-width: 601px) and (max-width: 1024px) {
-    .card {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    footer {
-        padding: 15px;
-    }
-}
-
-/* Escritorio */
-@media (min-width: 1025px) {
-
-    
-    .card-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    main, footer {
+    .card2 {
+        min-width: 100%;
         padding: 20px;
+    }
+
+    .tab .fila {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .tab .fila .col {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* Para pantallas entre 601px y 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        background-image: url("../img/innocent-fondo-medium.webp");
+    }
+
+    .logo {
+        height: 60px;
+    }
+
+    .nav-list {
+        gap: 2rem;
+    }
+
+    .card {
+        padding: 15px;
+        box-shadow: 0 2px 4px rgba(205, 28, 28, 0.844);
+    }
+
+    .card2 {
+        min-width: 90%;
+        padding: 25px;
+    }
+
+    .tab .fila {
+        margin-bottom: 60px;
+    }
+
+    .tab .fila .col {
+        margin-right: 20px;
+    }
+}
+
+/* Para pantallas de 1025px en adelante */
+@media (min-width: 1024px) {
+    body {
+        background-image: url("../img/innocent-fondo.webp");
+    }
+
+    .logo {
+        height: 70px;
+    }
+
+    .nav-list {
+        gap: 4rem;
+    }
+
+    .card {
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(205, 28, 28, 0.844);
+    }
+
+    .card2 {
+        min-width: 1100px;
+        padding: 30px;
+    }
+
+    .tab .fila .col {
+        margin-right: 40px;
     }
 }
