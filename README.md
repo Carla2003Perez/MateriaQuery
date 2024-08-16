@@ -6,20 +6,19 @@ En mi enfoque en el diseño responsivo, estuve allí experimentando e incluso co
 Dispositivos móviles:
 <br>
 <img class="ino" src="capturas/part1 600.png">
-
 <br>
-
-<img class="ino" src="capturas/part2 600.png">
-<img class="ino" src="capturas/part3 600.png">
+<img src="capturas/part2 600.png">
+<img src="capturas/part3 600.png">
 <br>
 tabletas:
 <br>
 <img class="ino" src="capturas/tabletas.png">
 <br>
 
-escritorio
+escritorio:
 <br>
 <img class="ino" src="capturas/escritorio.png">
+
 <br>
 Para que lo vea con más detalle aquí le presento un link:
 https://mangasfavoritos.netlify.app
