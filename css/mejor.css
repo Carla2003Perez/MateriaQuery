@@ -5,15 +5,12 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-   
-    background-image: url("../img/innocent-fondo.webp");
-   
+    background-image: url("../img/Ingeniero.webp");
+  
     
 }
 
 
-
- 
 .logo {
     
     height: 70px;
@@ -51,7 +48,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    background: linear-gradient(to right, #000c67, #007be5);
+    background: linear-gradient(to right, #104a28, #10912c);
 
 }
 
@@ -59,6 +56,12 @@ header {
     color: #1f0101;
     font-size: 30px;
     text-align: center;
+    font-family: 'Arial Black';
+   
+ }
+
+ h4{
+    color:black;
     font-family: sans-serif;
  }
 
@@ -72,7 +75,7 @@ header {
     text-align: left;
     position: relative; 
     z-index: 1; 
-    background: linear-gradient(to right, #4e0606, #e50000);
+    background: linear-gradient(to right, #dc9403, #753f0d);
     color:aliceblue;
     
 }
@@ -107,7 +110,7 @@ header {
 }
 
 .card2 {
-    border: 1px solid #8d8d8d;
+    
     background-color: #fff;
     padding: 30px;
     border-radius: 20px;
@@ -127,99 +130,9 @@ header {
 
 
 footer {
-    background-color: #000;
+    background-color: #0f3604;
     color: #fff;
     padding: 2em 0;
     text-align: center;
     margin-top: auto;
-}
-
-
-/* Media Queries */
-/* Móviles */
-@media (max-width: 600px) {
-
-    .abrir-menu,
-    .cerrar-menu {
-        display: block;
-        border: 0;
-        font-size: 1.25rem;
-        background-color: transparent;
-        cursor: pointer;
-    }
-
-    .abrir-menu {
-        color: #f7f3f3;
-    }
-
-    .cerrar-menu {
-        color: #ececec;
-    }
-
-    .nav {
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #1c1c1c;
-        padding: 2rem;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-        z-index: 1000; 
-    }
-
-    .nav.visible {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .nav-list {
-        flex-direction: column;
-        align-items: end;
-    }
-
-    .nav-list li a {
-        color: #ecececec;
-    }
-
-    .menu {
-        display: block;
-    }
-
-    .card {
-        grid-template-columns: 1fr;
-    }
-
-    footer {
-        padding: 9px;
-    }
-}
-
-/* Tabletas */
-@media (min-width: 601px) and (max-width: 1024px) {
-    .card {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    footer {
-        padding: 15px;
-    }
-}
-
-/* Escritorio */
-@media (min-width: 1025px) {
-
-    
-    .card-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    main, footer {
-        padding: 20px;
-    }
 }
