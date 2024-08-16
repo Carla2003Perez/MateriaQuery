@@ -10,9 +10,6 @@ Dispositivos móviles:
 <br>
 
 <img class="ino" src="capturas/part2 600.png">
-
-<br>
-
 <img class="ino" src="capturas/part3 600.png">
 <br>
 tabletas:
@@ -21,7 +18,8 @@ tabletas:
 <br>
 
 escritorio
+<br>
 <img class="ino" src="capturas/escritorio.png">
-
+<br>
 Para que lo vea con más detalle aquí le presento un link:
 https://mangasfavoritos.netlify.app
